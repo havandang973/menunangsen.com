@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="header bg-white fixed top-0 right-0 left-0 z-50 shadow-md">
+        <div class="w-full mx-auto px-5">
+            <header class="flex flex-col lg:flex-row justify-evenly items-center my-5">
+                <div class="flex w-full lg:w-auto items-center justify-between">
+                    <a href="/" class="text-lg w-60">
+                        <img src="http://vi.huongsenhealthcare.com/wp-content/uploads/2023/02/huong-sen-healthcare-logo.png"
+                            alt="" class="w-full">
+                    </a>
+                    <div class="block lg:hidden">
+                        <button data-collapse-toggle="mobile-menu-2" type="button" aria-controls="mobile-menu-2"
+                            aria-expanded="false">
+                            <svg fill="currentColor" class="w-4 h-4 text-gray-800" width="24" height="24"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <title>Toggle Menu</title>
+                                <path class="astronav-close-icon astronav-toggle hidden" fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M18.278 16.864a1 1 0 01-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 01-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 011.414-1.414l4.829 4.828 4.828-4.828a1 1 0 111.414 1.414l-4.828 4.829 4.828 4.828z">
+                                </path>
+                                <path class="astronav-open-icon astronav-toggle" fill-rule="evenodd"
+                                    d="M4 5h16a1 1 0 010 2H4a1 1 0 110-2zm0 6h16a1 1 0 010 2H4a1 1 0 010-2zm0 6h16a1 1 0 010 2H4a1 1 0 010-2z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <nav id="mobile-menu-2"
+                    class="astronav-items astronav-toggle hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0">
+                    <ul class="flex flex-col lg:flex-row lg:gap-3">
+                        <li class="group relative">
+                            <menu class="astronav-dropdown group open" aria-expanded="true" open="">
+                                <button data-collapse-toggle="mobile-nav-1" type="button" aria-controls="mobile-nav-1"
+                                    aria-expanded="false"
+                                    class="flex items-center gap-1 w-full lg:w-auto lg:px-3 py-2 text-gray-600 hover:text-gray-900 uppercase text-xs font-bold">
+                                    <a href="#">Giới thiệu</a>
+                                    <img width="12" src="https://www.svgrepo.com/show/521469/arrow-down.svg" alt="">
+                                </button>
+                                <div id="mobile-nav-1" class="hidden group-hover:block"
+                                    class="astronav-dropdown dropdown-toggle">
+                                    <div class="lg:absolute w-full lg:w-52 z-10 lg:left-0 origin-top-left">
+                                        <div
+                                            class="px-4 lg:py-4 lg:bg-white lg:rounded-md lg:shadow lg:border flex flex-col space-y-3 text-xs font-bold">
+                                            <a href="/" class="py-1 text-gray-900 hover:text-pink-600"> HƯƠNG SEN
+                                                HEALTHCARE</a>
+                                            <a href="#" class="py-1 text-gray-900 hover:text-pink-600"> HƯƠNG SEN DOCTOR
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </menu>
+                        </li>
+                        <li class="group relative">
+                            <menu class="astronav-dropdown group open" aria-expanded="true" open="">
+                                <button
+                                    class="flex items-center gap-1 w-full lg:w-auto lg:px-3 py-2 text-gray-600 hover:text-gray-900 uppercase text-xs font-bold">
+                                    <a href="#">Dịch vụ</a>
+                                    <img width="12" src="https://www.svgrepo.com/show/521469/arrow-down.svg" alt="">
+                                </button>
+                                <div class="hidden group-hover:block" class="astronav-dropdown dropdown-toggle"
+                                    aria-expanded="true">
+                                    <div class="lg:absolute w-full lg:w-56 z-10 lg:left-0 origin-top-left ">
+                                        <div
+                                            class="px-4 lg:py-4 lg:bg-white lg:rounded-md lg:shadow lg:border flex flex-col space-y-3 text-xs font-bold uppercase">
+                                            <a href="/" class="py-1 text-gray-900 hover:text-pink-600">Bảng giá dịch
+                                                vụ</a>
+                                            <a href="#" class="py-1 text-gray-900 hover:text-pink-600">điều trị bác
+                                                sĩ</a>
+                                            <a href="#" class="py-1 text-gray-900 hover:text-pink-600">MASSAGE XOA BÓP
+                                                BẤM HUYỆT</a>
+                                            <a href="#" class="py-1 text-gray-900 hover:text-pink-600">MASSAGE BÀ
+                                                BẦU</a>
+                                            <a href="#" class="py-1 text-gray-900 hover:text-pink-600">MASSAGE CẶP
+                                                ĐÔI</a>
+                                            <a href="#" class="py-1 text-gray-900 hover:text-pink-600">XÔNG HƠI ĐÁ
+                                                MUỐI</a>
+                                            <a href="#" class="py-1 text-gray-900 hover:text-pink-600">XÔNG HƠI THẢO
+                                                DƯỢC</a>
+                                            <a href="#" class="py-1 text-gray-900 hover:text-pink-600">XÔNG TUYẾT
+                                                LẠNH</a>
+                                            <a href="#" class="py-1 text-gray-900 hover:text-pink-600">NGÂM THUỐC LÁ DAO
+                                                ĐỎ</a>
+                                            <a href="#" class="py-1 text-gray-900 hover:text-pink-600">NGÂM BỒN
+                                                JACUZZI</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </menu>
+                        </li>
+                        <li class="group relative">
+                            <menu class="astronav-dropdown group open" aria-expanded="true" open="">
+                                <button
+                                    class="flex items-center gap-1 w-full lg:w-auto lg:px-3 py-2 text-gray-600 hover:text-gray-900 uppercase text-xs font-bold">
+                                    <a href="#">Tin tức & ưu đãi</a>
+                                    <img width="12" src="https://www.svgrepo.com/show/521469/arrow-down.svg" alt="">
+                                </button>
+                                <div class="hidden group-hover:block" class="astronav-dropdown dropdown-toggle"
+                                    aria-expanded="true">
+                                    <div class="lg:absolute w-full lg:w-48 z-10 lg:left-0 origin-top-left ">
+                                        <div
+                                            class="px-4 lg:py-4 lg:bg-white lg:rounded-md lg:shadow lg:border flex flex-col space-y-3 text-xs font-bold uppercase">
+                                            <a href="/" class="py-1 text-gray-900 hover:text-pink-600">ƯU ĐÃI</a>
+                                            <a href="#" class="py-1 text-gray-900 hover:text-pink-600">HOẠT ĐỘNG HƯƠNG
+                                                SEN</a>
+                                            <a href="#" class="py-1 text-gray-900 hover:text-pink-600">TUYỂN DỤNG</a>
+                                            <a href="#" class="py-1 text-gray-900 hover:text-pink-600">ĐÀO TẠO</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </menu>
+                        </li>
+                        <li class="group relative">
+                            <menu class="astronav-dropdown group open" aria-expanded="true" open="">
+                                <button
+                                    class="flex items-center gap-1 w-full lg:w-auto lg:px-3 py-2 text-gray-600 hover:text-gray-900 uppercase text-xs font-bold">
+                                    <a href="#">hướng dẫn khách hàng</a>
+                                    <img width="12" src="https://www.svgrepo.com/show/521469/arrow-down.svg" alt="">
+                                </button>
+                                <div class="hidden group-hover:block" class="astronav-dropdown dropdown-toggle"
+                                    aria-expanded="true">
+                                    <div class="lg:absolute w-full lg:w-fit z-10 lg:left-0 origin-top-left ">
+                                        <div
+                                            class="px-4 lg:py-4 lg:bg-white lg:rounded-md lg:shadow lg:border flex flex-col space-y-3 text-xs font-bold uppercase">
+                                            <a href="/" class="py-1 text-gray-900 hover:text-pink-600">QUY TRÌNH DỊCH
+                                                VỤ</a>
+                                            <a href="#" class="py-1 text-gray-900 hover:text-pink-600">CÂU HỎI THƯỜNG
+                                                GẶP</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </menu>
+                        </li>
+                        <li class="group relative">
+                            <menu class="astronav-dropdown group open" aria-expanded="true" open="">
+                                <button
+                                    class="flex items-center gap-1 w-full lg:w-auto lg:px-3 py-2 text-gray-600 hover:text-gray-900 uppercase text-xs font-bold">
+                                    <a href="">đặt lịch</a>
+                                </button>
+                            </menu>
+                        </li>
+                        <li class="group relative">
+                            <menu class="astronav-dropdown group open" aria-expanded="true" open="">
+                                <button
+                                    class="flex items-center gap-1 w-full lg:w-auto lg:px-3 py-2 text-gray-600 hover:text-gray-900 uppercase text-xs font-bold">
+                                    <span class="w-4"><img src="https://www.svgrepo.com/show/348179/language.svg" alt=""
+                                            class=""></span>
+                                    <img width="12" src="https://www.svgrepo.com/show/521469/arrow-down.svg" alt="">
+                                </button>
+                                <div class="hidden group-hover:block" class="astronav-dropdown dropdown-toggle"
+                                    aria-expanded="true">
+                                    <div class="lg:absolute w-full lg:w-fit z-10 lg:left-0 origin-top-left ">
+                                        <div
+                                            class="px-4 lg:py-4 lg:bg-white lg:rounded-md lg:shadow lg:border flex flex-col space-y-3 text-xs font-bold uppercase">
+                                            <a href="/" class="py-1 text-gray-900 hover:text-pink-600">ENGLISH</a>
+                                            <a href="#" class="py-1 text-gray-900 hover:text-pink-600">한국어</a>
+                                            <a href="#" class="py-1 text-gray-900 hover:text-pink-600">日本語</a>
+                                            <a href="#" class="py-1 text-gray-900 hover:text-pink-600">简体中文</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </menu>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+    </div>
+    <div class="body mt-28">
+        <div class="w-full h-96">
+            <div class="w-full h-full bg-center bg-cover relative"
+                style="background-image: url(https://vi.huongsenhealthcare.com/wp-content/uploads/2022/05/huongsenbt-5997.jpg)">
+                <div class="absolute w-full h-full" style="background-color: rgba(0, 0, 0, 0.2);"></div>
+                <div
+                    class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 lg:text-nowrap text-center space-y-4">
+                    <h1
+                        class="text-white md:text-5xl leading-tight text-4xl md:tracking-normal tracking-widest font-medium">
+                        BẢNG GIÁ DỊCH VỤ HƯƠNG SEN HEALTHCARE</h1>
+                    <div class="text-white">
+                        <a href="" class="">Trang chủ</a>
+                        <span class="">/</span>
+                        <span class="">Bảng Giá Dịch Vụ Hương Sen Healthcare</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content body w-full md:py-24 py-20">
+            <div class="md:space-y-24 space-y-16 max-w-screen-xl mx-auto md:px-10 px-4">
+                <div class="text-pink-500 text-center text-5xl font-semibold space-y-2">
+                    <h1 class="uppercase">BẢNG GIÁ SPA & MASSAGE NÀNG SEN</h1>
+                    <p class="text-4xl italic lowercase">(áp dụng từ Tháng 1/2024)</p>
+                </div>
+                <div class="space-y-8">
+                    <div class="w-full">
+                        <h1 class="uppercase text-center text-gray-800 md:text-5xl text-4xl font-bold">Gói Luxury</h1>
+                        <img src="https://memorybloom.ca/wp-content/uploads/2021/12/Memory-Bloom-Separator.webp" alt=""
+                            class="w-96 mx-auto">
+                    </div>
+                    <p class="text-lg text-gray-800"><strong>Gói Luxury</strong> bao gồm 2 gói <strong>"Điều trị chuyên
+                            sâu"</strong> và <strong>"Chăm sóc toàn diện"</strong>. Được thực hiện bởi những kỹ thuật
+                        viên có chuyên môn cao. Quý khách hàng có thể lựa chọn phòng riêng để đảm bảo sự riêng tư, thoải
+                        mái nhất khi thực hiện liệu trình.</p>
+                    <div class="grid lg:grid-flow-col gap-8 grid-flow-row lg:grid-cols-2">
+                        <div class="w-full space-y-10">
+                            <div class="cot bg-pink-600 w-full py-11 px-3">
+                                <div class="text-center space-y-10">
+                                    <img src="http://vi.huongsenhealthcare.com/wp-content/uploads/2023/02/huong-sen-healthcare-logo.png"
+                                        alt="" class="w-60 mx-auto">
+                                    <div class="text-white space-y-4">
+                                        <h1 class="uppercase text-3xl">ĐIỀU TRỊ CHUYÊN SÂU - 150 phút</h1>
+                                        <h2 class="animate-bounce text-3xl">950.000đ</h2><span>/lần</span>
+                                    </div>
+                                    <button class="uppercase text-pink-600 text-xs font-semibold bg-white px-4 py-2">
+                                        <a href="" class="">Đặt phòng</a>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="space-y-10 border-b border-gray-400 pb-10">
+                                <div class="mota space-y-5 md:text-base text-lg">
+                                    <p class="font-bold">🔴 Đặc trị các bệnh</p>
+                                    <ul class="list-disc list-inside ml-2">
+                                        <li>Cảm phong hàn</li>
+                                        <li>Đau cổ vai gáy</li>
+                                        <li>Đau lưng, thắt lưng, đau thần kinh tọa</li>
+                                        <li>Thoái hóa đốt sống cổ, đốt sống lưng</li>
+                                        <li>Đau đầu, rối loạn tiền đình, thiếu máu lên não</li>
+                                    </ul>
+                                    <p class="font-bold">🔴 Đả thông kinh lạc, đào thải độc tố, tăng cường sức đề kháng
+                                    </p>
+                                    <p class="font-bold">🔴 Giải tỏa căng thẳng, mệt mỏi, đem lại giấc ngủ ngon</p>
+                                </div>
+                                <div class="quytrinh space-y-4">
+                                    <h2 class="font-bold text-2xl">QUY TRÌNH</h2>
+                                    <ul class="space-y-5 list-decimal list-inside md:text-base text-lg">
+                                        <li>Xông đá nóng</li>
+                                        <li>Tăm sạch bằng bộ sản phẩm tắm gội thảo dược theo mùa.</li>
+                                        <li>Ngâm bồn gô, bôn sục với thuốc tăm thảo dược.</li>
+                                        <li>Xông hơi ướt với lá xông theo mùa, ngâm chân muối thảo dược.</li>
+                                        <li>Tăm tráng giải cảm.</li>
+                                        <li>Trị liệu chuyên sâu kết hợp cùng liệu pháp bấm huyệt đả thông kinh lạc và
+                                            phương pháp xông ngải cứu nóng.</li>
+                                        <li>Thưởng thức buffet miễn phí với đồ ăn nhẹ bổ dưỡng, trái cây theo mùa và đồ
+                                            uống tốt cho sức khỏe.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full space-y-10">
+                            <div class="cot bg-pink-600 w-full py-11 px-3">
+                                <div class="text-center space-y-10">
+                                    <img src="http://vi.huongsenhealthcare.com/wp-content/uploads/2023/02/huong-sen-healthcare-logo.png"
+                                        alt="" class="w-60 mx-auto">
+                                    <div class="text-white space-y-4">
+                                        <h1 class="uppercase text-3xl">chăm sóc toàn diện - 150 phút</h1>
+                                        <h2 class="animate-bounce text-3xl">950.000đ</h2><span>/lần</span>
+                                    </div>
+                                    <button class="uppercase text-pink-600 text-xs font-semibold bg-white px-4 py-2">
+                                        <a href="" class="">Đặt phòng</a>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="space-y-10 border-b border-gray-400 pb-10">
+                                <div class="mota space-y-5 md:text-base text-lg">
+                                    <p class="font-bold">🔴 Đặc trị các bệnh</p>
+                                    <ul class="list-disc list-inside ml-2">
+                                        <li>Cảm phong hàn</li>
+                                        <li>Đau cổ vai gáy</li>
+                                        <li>Đau lưng, thắt lưng, đau thần kinh tọa</li>
+                                        <li>Thoái hóa đốt sống cổ, đốt sống lưng</li>
+                                        <li>Đau đầu, rối loạn tiền đình, thiếu máu lên não</li>
+                                    </ul>
+                                    <p class="font-bold">🔴 Đả thông kinh lạc, đào thải độc tố, tăng cường sức đề kháng
+                                    </p>
+                                    <p class="font-bold">🔴 Giải tỏa căng thẳng, mệt mỏi, đem lại giấc ngủ ngon</p>
+                                </div>
+                                <div class="quytrinh space-y-4">
+                                    <h2 class="font-bold text-2xl">QUY TRÌNH</h2>
+                                    <ul class="space-y-5 list-decimal list-inside md:text-base text-lg">
+                                        <li>Xông đá nóng</li>
+                                        <li>Tăm sạch bằng bộ sản phẩm tắm gội thảo dược theo mùa.</li>
+                                        <li>Ngâm bồn gô, bôn sục với thuốc tăm thảo dược.</li>
+                                        <li>Xông hơi ướt với lá xông theo mùa, ngâm chân muối thảo dược.</li>
+                                        <li>Tăm tráng giải cảm.</li>
+                                        <li>Trị liệu chuyên sâu kết hợp cùng liệu pháp bấm huyệt đả thông kinh lạc và
+                                            phương pháp xông ngải cứu nóng.</li>
+                                        <li>Thưởng thức buffet miễn phí với đồ ăn nhẹ bổ dưỡng, trái cây theo mùa và đồ
+                                            uống tốt cho sức khỏe.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-8">
+                    <div class="w-full">
+                        <h1 class="uppercase text-center text-gray-800 md:text-5xl text-4xl font-bold">GÓI LIỆU TRÌNH
+                            TRỊ LIỆU</h1>
+                        <img src="https://memorybloom.ca/wp-content/uploads/2021/12/Memory-Bloom-Separator.webp" alt=""
+                            class="w-96 mx-auto">
+                    </div>
+                    <p class="text-lg text-gray-800"><strong>Gói liệu trình trị liệu</strong> bao gồm 2 gói
+                        <strong>"Platinum"</strong> và <strong>"Diamond"</strong>. Được thực hiện bởi những kỹ thuật
+                        viên có chuyên môn cao giúp xóa tan sự đau nhức, mệt mỏi, giúp mọi khách hàng đều được thư giãn
+                        và cảm thấy thoải mái nhất.</p>
+                    <div class="grid lg:grid-flow-col gap-8 grid-flow-row lg:grid-cols-2">
+                        <div class="w-full space-y-10">
+                            <div class="cot bg-pink-600 w-full py-11 px-3">
+                                <div class="text-center space-y-10">
+                                    <img src="http://vi.huongsenhealthcare.com/wp-content/uploads/2023/02/huong-sen-healthcare-logo.png"
+                                        alt="" class="w-60 mx-auto">
+                                    <div class="text-white space-y-4">
+                                        <h1 class="uppercase text-3xl">gói platinum - 120 phút</h1>
+                                        <h2 class="animate-bounce text-3xl">850.000đ</h2><span>/lần</span>
+                                    </div>
+                                    <button class="uppercase text-pink-600 text-xs font-semibold bg-white px-4 py-2">
+                                        <a href="" class="">Đặt phòng</a>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="space-y-10 border-b border-gray-400 pb-10">
+                                <div class="mota space-y-5 md:text-base text-lg">
+                                    <p class="font-bold">🔴 Đặc trị các bệnh</p>
+                                    <ul class="list-disc list-inside ml-2">
+                                        <li>Cảm phong hàn</li>
+                                        <li>Đau cổ vai gáy</li>
+                                        <li>Đau lưng, thắt lưng, đau thần kinh tọa</li>
+                                        <li>Thoái hóa đốt sống cổ, đốt sống lưng</li>
+                                        <li>Đau đầu, rối loạn tiền đình, thiếu máu lên não</li>
+                                    </ul>
+                                    <p class="font-bold">🔴 Đả thông kinh lạc, đào thải độc tố, tăng cường sức đề kháng
+                                    </p>
+                                    <p class="font-bold">🔴 Giải tỏa căng thẳng, mệt mỏi, đem lại giấc ngủ ngon</p>
+                                </div>
+                                <div class="quytrinh space-y-4">
+                                    <h2 class="font-bold text-2xl">QUY TRÌNH</h2>
+                                    <ul class="space-y-5 list-decimal list-inside md:text-base text-lg">
+                                        <li>Xông đá nóng</li>
+                                        <li>Tăm sạch bằng bộ sản phẩm tắm gội thảo dược theo mùa.</li>
+                                        <li>Ngâm bồn gô, bôn sục với thuốc tăm thảo dược.</li>
+                                        <li>Xông hơi ướt với lá xông theo mùa, ngâm chân muối thảo dược.</li>
+                                        <li>Tăm tráng giải cảm.</li>
+                                        <li>Trị liệu chuyên sâu kết hợp cùng liệu pháp bấm huyệt đả thông kinh lạc và
+                                            phương pháp xông ngải cứu nóng.</li>
+                                        <li>Thưởng thức buffet miễn phí với đồ ăn nhẹ bổ dưỡng, trái cây theo mùa và đồ
+                                            uống tốt cho sức khỏe.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full space-y-10">
+                            <div class="cot bg-pink-600 w-full py-11 px-3">
+                                <div class="text-center space-y-10">
+                                    <img src="http://vi.huongsenhealthcare.com/wp-content/uploads/2023/02/huong-sen-healthcare-logo.png"
+                                        alt="" class="w-60 mx-auto">
+                                    <div class="text-white space-y-4">
+                                        <h1 class="uppercase text-3xl">gói diamond - 100 phút</h1>
+                                        <h2 class="animate-bounce text-3xl">650.000đ</h2><span>/lần</span>
+                                    </div>
+                                    <button class="uppercase text-pink-600 text-xs font-semibold bg-white px-4 py-2">
+                                        <a href="" class="">Đặt phòng</a>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="space-y-10 border-b border-gray-400 pb-10">
+                                <div class="mota space-y-5 md:text-base text-lg">
+                                    <p class="font-bold">🔴 Đặc trị các bệnh</p>
+                                    <ul class="list-disc list-inside ml-2">
+                                        <li>Cảm phong hàn</li>
+                                        <li>Đau cổ vai gáy</li>
+                                        <li>Đau lưng, thắt lưng, đau thần kinh tọa</li>
+                                        <li>Thoái hóa đốt sống cổ, đốt sống lưng</li>
+                                        <li>Đau đầu, rối loạn tiền đình, thiếu máu lên não</li>
+                                    </ul>
+                                    <p class="font-bold">🔴 Đả thông kinh lạc, đào thải độc tố, tăng cường sức đề kháng
+                                    </p>
+                                    <p class="font-bold">🔴 Giải tỏa căng thẳng, mệt mỏi, đem lại giấc ngủ ngon</p>
+                                </div>
+                                <div class="quytrinh space-y-4">
+                                    <h2 class="font-bold text-2xl">QUY TRÌNH</h2>
+                                    <ul class="space-y-5 list-decimal list-inside md:text-base text-lg">
+                                        <li>Xông đá nóng</li>
+                                        <li>Tăm sạch bằng bộ sản phẩm tắm gội thảo dược theo mùa.</li>
+                                        <li>Ngâm bồn gô, bôn sục với thuốc tăm thảo dược.</li>
+                                        <li>Xông hơi ướt với lá xông theo mùa, ngâm chân muối thảo dược.</li>
+                                        <li>Tăm tráng giải cảm.</li>
+                                        <li>Trị liệu chuyên sâu kết hợp cùng liệu pháp bấm huyệt đả thông kinh lạc và
+                                            phương pháp xông ngải cứu nóng.</li>
+                                        <li>Thưởng thức buffet miễn phí với đồ ăn nhẹ bổ dưỡng, trái cây theo mùa và đồ
+                                            uống tốt cho sức khỏe.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-8">
+                    <div class="w-full">
+                        <h1 class="uppercase text-center text-gray-800 md:text-5xl text-4xl font-bold">GÓI THƯ GIÃN PHỤC
+                            HỒI</h1>
+                        <img src="https://memorybloom.ca/wp-content/uploads/2021/12/Memory-Bloom-Separator.webp" alt=""
+                            class="w-96 mx-auto">
+                    </div>
+                    <p class="text-lg text-gray-800"><strong>Gói Thư giãn phục hồi</strong> bao gồm 2 gói <strong>"Gói
+                            Gold"</strong> và <strong>"Gói Sliver".</strong> Được thực hiện bởi những kỹ thuật viên có
+                        chuyên môn cao. Thời gian trị liệu ngắn hơn các gói trên, phù hợp với những người gặp tình trạng
+                        đau nhức, mệt mỏi, muốn trải nghiệm massage trị liệu, phục hồi thư giãn mà không có quá nhiều
+                        thời gian.</p>
+                    <div class="grid lg:grid-flow-col gap-8 grid-flow-row lg:grid-cols-2">
+                        <div class="w-full space-y-10">
+                            <div class="cot bg-pink-600 w-full py-11 px-3">
+                                <div class="text-center space-y-10">
+                                    <img src="http://vi.huongsenhealthcare.com/wp-content/uploads/2023/02/huong-sen-healthcare-logo.png"
+                                        alt="" class="w-60 mx-auto">
+                                    <div class="text-white space-y-4">
+                                        <h1 class="uppercase text-3xl">gói gold - 90 phút</h1>
+                                        <h2 class="animate-bounce text-3xl">500.000đ</h2><span>/lần</span>
+                                    </div>
+                                    <button class="uppercase text-pink-600 text-xs font-semibold bg-white px-4 py-2">
+                                        <a href="" class="">Đặt phòng</a>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="space-y-10 border-b border-gray-400 pb-10">
+                                <div class="mota space-y-5 md:text-base text-lg">
+                                    <p class="font-bold">🔴 Đặc trị các bệnh</p>
+                                    <ul class="list-disc list-inside ml-2">
+                                        <li>Cảm phong hàn</li>
+                                        <li>Đau cổ vai gáy</li>
+                                        <li>Đau lưng, thắt lưng, đau thần kinh tọa</li>
+                                        <li>Thoái hóa đốt sống cổ, đốt sống lưng</li>
+                                        <li>Đau đầu, rối loạn tiền đình, thiếu máu lên não</li>
+                                    </ul>
+                                    <p class="font-bold">🔴 Đả thông kinh lạc, đào thải độc tố, tăng cường sức đề kháng
+                                    </p>
+                                    <p class="font-bold">🔴 Giải tỏa căng thẳng, mệt mỏi, đem lại giấc ngủ ngon</p>
+                                </div>
+                                <div class="quytrinh space-y-4">
+                                    <h2 class="font-bold text-2xl">QUY TRÌNH</h2>
+                                    <ul class="space-y-5 list-decimal list-inside md:text-base text-lg">
+                                        <li>Xông đá nóng</li>
+                                        <li>Tăm sạch bằng bộ sản phẩm tắm gội thảo dược theo mùa.</li>
+                                        <li>Ngâm bồn gô, bôn sục với thuốc tăm thảo dược.</li>
+                                        <li>Xông hơi ướt với lá xông theo mùa, ngâm chân muối thảo dược.</li>
+                                        <li>Tăm tráng giải cảm.</li>
+                                        <li>Trị liệu chuyên sâu kết hợp cùng liệu pháp bấm huyệt đả thông kinh lạc và
+                                            phương pháp xông ngải cứu nóng.</li>
+                                        <li>Thưởng thức buffet miễn phí với đồ ăn nhẹ bổ dưỡng, trái cây theo mùa và đồ
+                                            uống tốt cho sức khỏe.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full space-y-10">
+                            <div class="cot bg-pink-600 w-full py-11 px-3">
+                                <div class="text-center space-y-10">
+                                    <img src="http://vi.huongsenhealthcare.com/wp-content/uploads/2023/02/huong-sen-healthcare-logo.png"
+                                        alt="" class="w-60 mx-auto">
+                                    <div class="text-white space-y-4">
+                                        <h1 class="uppercase text-3xl">gói sliver - 60 phút</h1>
+                                        <h2 class="animate-bounce text-3xl">390.000đ</h2><span>/lần</span>
+                                    </div>
+                                    <button class="uppercase text-pink-600 text-xs font-semibold bg-white px-4 py-2">
+                                        <a href="" class="">Đặt phòng</a>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="space-y-10 border-b border-gray-400 pb-10">
+                                <div class="mota space-y-5 md:text-base text-lg">
+                                    <p class="font-bold">🔴 Đặc trị các bệnh</p>
+                                    <ul class="list-disc list-inside ml-2">
+                                        <li>Cảm phong hàn</li>
+                                        <li>Đau cổ vai gáy</li>
+                                        <li>Đau lưng, thắt lưng, đau thần kinh tọa</li>
+                                        <li>Thoái hóa đốt sống cổ, đốt sống lưng</li>
+                                        <li>Đau đầu, rối loạn tiền đình, thiếu máu lên não</li>
+                                    </ul>
+                                    <p class="font-bold">🔴 Đả thông kinh lạc, đào thải độc tố, tăng cường sức đề kháng
+                                    </p>
+                                    <p class="font-bold">🔴 Giải tỏa căng thẳng, mệt mỏi, đem lại giấc ngủ ngon</p>
+                                </div>
+                                <div class="quytrinh space-y-4">
+                                    <h2 class="font-bold text-2xl">QUY TRÌNH</h2>
+                                    <ul class="space-y-5 list-decimal list-inside md:text-base text-lg">
+                                        <li>Xông đá nóng</li>
+                                        <li>Tăm sạch bằng bộ sản phẩm tắm gội thảo dược theo mùa.</li>
+                                        <li>Ngâm bồn gô, bôn sục với thuốc tăm thảo dược.</li>
+                                        <li>Xông hơi ướt với lá xông theo mùa, ngâm chân muối thảo dược.</li>
+                                        <li>Tăm tráng giải cảm.</li>
+                                        <li>Trị liệu chuyên sâu kết hợp cùng liệu pháp bấm huyệt đả thông kinh lạc và
+                                            phương pháp xông ngải cứu nóng.</li>
+                                        <li>Thưởng thức buffet miễn phí với đồ ăn nhẹ bổ dưỡng, trái cây theo mùa và đồ
+                                            uống tốt cho sức khỏe.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="grid lg:grid-flow-col gap-8 grid-flow-row">
+                        <div class="w-full space-y-10">
+                            <div class="cot bg-pink-600 w-full py-11 px-3">
+                                <div class="text-center space-y-10">
+                                    <img src="http://vi.huongsenhealthcare.com/wp-content/uploads/2023/02/huong-sen-healthcare-logo.png"
+                                        alt="" class="w-60 mx-auto">
+                                    <div class="text-white space-y-4 pb-10 border-b border-slate-200">
+                                        <h1 class="uppercase text-3xl">Tắm xông sục - Xông hơi - Giác hơi - Đả thông
+                                            kinh lạc - 40 phút</h1>
+                                        <h2 class="animate-bounce text-3xl">150.000đ</h2><span>/lần</span>
+                                    </div>
+                                    <button class="uppercase text-pink-600 text-xs font-semibold bg-white px-8 py-3">
+                                        <a href="" class="">Đặt phòng</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-pink-500 text-center space-y-3">
+                    <h1 class="text-5xl font-normal">Bảng Giá Nàng Sen</h1>
+                    <p class="text-4xl text-gray-800 uppercase font-normal tracking-wide">DỊCH VỤ BEAUTY SPA</p>
+                    <div class="w-full">
+                        <img src="https://memorybloom.ca/wp-content/uploads/2021/12/Memory-Bloom-Separator.webp" alt=""
+                            class="w-96 mx-auto">
+                    </div>
+                    <p class="text-gray-800 text-xl font-medium">Bao gồm các dịch vụ: Chăm sóc da, Buffet free</p>
+                </div>
+                <div class="space-y-8">
+                    <div class="w-full">
+                        <h1 class="uppercase text-center text-gray-800 md:text-5xl text-4xl font-bold">LIỆU TRÌNH CHĂM
+                            SÓC DA</h1>
+                        <img src="https://memorybloom.ca/wp-content/uploads/2021/12/Memory-Bloom-Separator.webp" alt=""
+                            class="w-96 mx-auto">
+                    </div>
+                    <div class="grid lg:grid-flow-col gap-8 grid-flow-row lg:grid-cols-2">
+                        <div class="w-full space-y-10">
+                            <div class="cot bg-pink-600 w-full py-11 px-3">
+                                <div class="text-center space-y-10">
+                                    <img src="http://vi.huongsenhealthcare.com/wp-content/uploads/2023/02/huong-sen-healthcare-logo.png"
+                                        alt="" class="w-60 mx-auto">
+                                    <div class="text-white space-y-4">
+                                        <h1 class="uppercase text-3xl">Đắp mặt nạ Đông nhân đường</h1>
+                                        <h2 class="animate-bounce text-3xl">150.000đ</h2><span>/lần</span>
+                                    </div>
+                                    <button class="uppercase text-pink-600 text-xs font-semibold bg-white px-4 py-2">
+                                        <a href="" class="">Đặt phòng</a>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="border-b border-gray-400 pb-10">
+                                <div class="space-y-5 md:text-base text-lg">
+                                    <p class="font-bold">🔴 Đắp mặt nạ tái tạo da, tăng sinh collagen</p>
+                                    <p class="font-bold">🔴 Di tinh chất nâng cơ chống lão hóa</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full space-y-10">
+                            <div class="cot bg-pink-600 w-full py-11 px-3">
+                                <div class="text-center space-y-10">
+                                    <img src="http://vi.huongsenhealthcare.com/wp-content/uploads/2023/02/huong-sen-healthcare-logo.png"
+                                        alt="" class="w-60 mx-auto">
+                                    <div class="text-white space-y-4">
+                                        <h1 class="uppercase text-3xl">Tẩy tế bào chết</h1>
+                                        <h2 class="animate-bounce text-3xl">150.000đ</h2><span>/lần</span>
+                                    </div>
+                                    <button class="uppercase text-pink-600 text-xs font-semibold bg-white px-4 py-2">
+                                        <a href="" class="">Đặt phòng</a>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="border-b border-gray-400 pb-10">
+                                <div class="space-y-5 md:text-base text-lg">
+                                    <p class="font-bold">🔴 Tẩy trang, rửa mặt, tẩy da chết</p>
+                                    <p class="font-bold">🔴 Thoa kem dưỡng ẩm/ dầu dừa cấp ẩm cho da</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="grid lg:grid-flow-col gap-8 grid-flow-row">
+                        <div class="w-full space-y-10">
+                            <div class="cot bg-pink-600 w-full py-11 px-3">
+                                <div class="text-center space-y-10">
+                                    <img src="http://vi.huongsenhealthcare.com/wp-content/uploads/2023/02/huong-sen-healthcare-logo.png"
+                                        alt="" class="w-60 mx-auto">
+                                    <div class="text-white space-y-4 pb-10 border-b border-slate-200">
+                                        <h1 class="uppercase text-3xl animate-bounce">Buffet free</h1>
+                                        <h2 class="text-3xl">Thưởng thức set ăn nhẹ bổ dưỡng, trái cây và đồ uống tốt
+                                            cho sức khỏe</h2>
+                                    </div>
+                                    <p class="text-lg font-semibold text-white">(Áp dụng cho tất cả các khách hàng sử
+                                        dụng dịch vụ tại Nàng Sen massage & spa) </p>
+                                    <!-- <button class="uppercase text-pink-600 text-xs font-semibold bg-white px-8 py-3">
+                                        <a href="" class="">Đặt phòng</a>
+                                    </button> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <footer class="bg-zinc-800 text-center text-neutral-600 dark:bg-neutral-600 dark:text-neutral-200 lg:text-left">
+            <div class="md:px-10 py-10 px-4 text-center md:text-left">
+                <div class="grid-1 w-fit grid md:gap-8 gap-20 md:grid-cols-2 lg:grid-cols-3 mx-auto">
+                    <!-- Products section -->
+                    <div class="w-full mx-auto text-white text-left space-y-6">
+                        <h6 class="mb-4 text-left md:flex justify-center font-semibold text-lg uppercase md:justify-start">
+                            Giờ làm việc
+                        </h6>
+                        <ul class="space-y-2">
+                            <li><p class="text-white dark:text-neutral-200">9:00 – 22:00</p></li>
+                            <li><p class="text-white dark:text-neutral-200">Tất cả các ngày trong tuần (chỉ nghỉ Tết Nguyên Đán)</p></li>
+                        </ul>
+                    </div>
+                    <!-- Useful links section -->
+                    <div class="w-full mx-auto text-white text-left space-y-6">
+                        <h6 class="mb-4 md:flex justify-center text-left font-semibold text-lg uppercase md:justify-start">
+                            LIÊN HỆ
+                        </h6>
+                        <div class="space-y-8">
+                            <ul class="space-y-2 text-left">
+                                <li>Hương Sen Tân Bình – 035 618 3888</li>
+                                <li>Hương Sen Bình Thạnh – 0829 583 888</li>
+                                <li>Hương Sen Hà Đông – 0243 3133 999</li>
+                                <li>Hương Sen Mỹ Đình – 0243 9271 330</li>
+                                <li>Hương Sen Lê Văn Thiêm – 0243 8533 999</li>
+                                <li>Hương Sen An Dương – 0243 7171 999</li>
+                            </ul>
+                            <ul class="space-y-2">
+                                <li>
+                                    <a href="tel:+84353183888" class="text-pink-600 hover:text-pink-500 dark:text-neutral-200">035 318 3888 (HN)</a>
+                                </li>
+                                <li>
+                                    <a href="tel:+84356183888" class="text-pink-600 hover:text-pink-500 dark:text-neutral-200">035 618 3888 (SG)</a>
+                                </li>
+                                <li>
+                                    <a href="mailto:huongsenhealthcarecenter@gmail.com" class="text-pink-600 hover:text-pink-500 dark:text-neutral-200">huongsenhealthcarecenter@gmail.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Contact section -->
+                    <div class="w-full mx-auto">
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fhuongsenhealthcare%2F%3Fref%3Dembed_page&tabs&width=340&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-zinc-900 p-6 text-center w-full">
+                <span class="text-gray-400 text-sm">Hương Sen © 2024 Mọi quyền được bảo vệ </span>
+            </div>
+        </footer>
+    </div>
+    <div class="w-fit">
+        <a href="tel:+84353183888" class="text-center flex justify-center items-center fixed left-8 bottom-8 space-x-3 ">
+            <img class="animate-pulse" src="https://bizweb.dktcdn.net/100/408/657/themes/793825/assets/hotline-icon.png?1680843215561" alt="" width="50" scale="0">
+            <span class="text-white text-xl font-semibold tracking-wider px-4 py-1 rounded-md bg-zinc-600 hidden sm:block">HOTLINE 035 318 3888</span>
+        </a>
+    </div>
+    <div class="fixed right-8 bottom-8 cursor-pointer">
+        <a href="#" class="">
+            <img src="https://bizflycloud.vn/img/scroll_top.png" alt="" width="50" class="">
+        </a>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+</html>
