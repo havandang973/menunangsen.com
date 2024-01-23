@@ -6,21 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bảng Giá Dịch Vụ Nàng Sen</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
     <link rel="icon" href="https://vi.huongsenhealthcare.com/wp-content/uploads/2019/04/favicon.png" sizes="32x32" />
 </head>
+
 <body>
-    <div class="bg-white fixed top-0 right-0 left-0 z-50 shadow-md">
-        <div class="w-full mx-auto px-5">
-            <header class="flex flex-col lg:flex-row justify-evenly items-center my-5">
-                <div class="flex w-full lg:w-auto items-center justify-between">
-                    <a href="/" class="text-lg w-60">
+    <header class="bg-white fixed top-0 right-0 left-0 z-50 shadow-md">
+        <div class="w-full mx-auto">
+            <div class="flex flex-col lg:flex-row justify-evenly items-center my-5">
+                <div class="flex w-full lg:w-auto items-center justify-between px-5">
+                    <a href="#" class="text-lg w-60">
                         <img src="http://vi.huongsenhealthcare.com/wp-content/uploads/2023/02/huong-sen-healthcare-logo.png"
                             alt="" class="w-full">
                     </a>
                     <div class="block lg:hidden">
-                        <button data-collapse-toggle="mobile-menu-2" type="button" aria-controls="mobile-menu-2" class="p-2"
-                            aria-expanded="false">
+                        <button data-collapse-toggle="mobile-menu-2" type="button" aria-controls="mobile-menu-2" 
+                            class="p-2" aria-expanded="false">
                             <svg fill="currentColor" class="w-6 h-6 text-gray-800" width="24" height="24"
                                 viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <title>Toggle Menu</title>
@@ -35,22 +36,32 @@
                         </button>
                     </div>
                 </div>
-                <nav id="mobile-menu-2" class="astronav-items astronav-toggle hidden w-full lg:h-auto lg:w-auto mt-2 lg:flex lg:mt-0">
+                <nav id="mobile-menu-2"
+                    class="astronav-items astronav-toggle hidden w-full lg:h-auto lg:w-auto mt-2 lg:flex lg:mt-0 bg-pink-600 md:bg-white ">
                     <ul class="flex flex-col lg:flex-row lg:gap-3 h-screen overflow-auto lg:overflow-visible lg:h-auto">
                         <li class="group relative">
                             <menu class="astronav-dropdown group open" aria-expanded="true" open="">
                                 <button data-collapse-toggle="mobile-nav-1" type="button" aria-controls="mobile-nav-1"
                                     aria-expanded="false"
-                                    class="text-base flex items-center gap-1 w-full lg:w-auto lg:px-3 lg:py-2 p-3 text-gray-600 hover:text-gray-900 uppercase lg:text-xs font-bold">
+                                    class="focus:bg-pink-700 md:mb-3 md:border-b-2 md:px-0 px-5 border-gray-200 hover:border-pink-600 hover:transition-all flex items-center justify-between gap-1 w-full lg:w-auto lg:px-3 lg:py-2 py-5 md:text-gray-600 md:hover:text-gray-900 text-white uppercase text-xs font-bold">
                                     <a href="#">Giới thiệu</a>
-                                    <img width="12" src="https://www.svgrepo.com/show/521469/arrow-down.svg" alt="">
+                                    <svg class="w-3 h-3 text-white md:text-black dark:text-white" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="m19 9-7 7-7-7" />
+                                    </svg>
                                 </button>
-                                <div id="mobile-nav-1" class="hidden lg:group-hover:block astronav-dropdown dropdown-toggle">
+                                <div id="mobile-nav-1"
+                                    class="hidden lg:group-hover:block astronav-dropdown dropdown-toggle bg-pink-700 md:px-0 px-5">
                                     <div class="lg:absolute w-full lg:w-52 z-10 lg:left-0 origin-top-left">
                                         <div
-                                            class="lg:px-4 px-10 lg:py-4 lg:bg-white lg:rounded-md lg:shadow lg:border flex flex-col space-y-3 lg:text-xs text-base font-bold">
-                                            <a href="#" class="py-1 text-gray-900 hover:text-pink-600 uppercase">NÀNG SEN HEALTHCARE</a>
-                                            <a href="#" class="py-1 text-gray-900 hover:text-pink-600 uppercase">NÀNG SEN DOCTOR</a>
+                                            class="lg:bg-gray-100 lg:px-4 lg:py-4 lg:shadow flex flex-col md:space-y-3 lg:text-xs text-xs font-bold uppercase">
+                                            <a href="#"
+                                                class="md:py-1 py-3 text-white md:text-gray-900 hover:text-pink-600 uppercase">NÀNG
+                                                SEN HEALTHCARE</a>
+                                            <a href="#"
+                                                class="md:py-1 py-3 text-white md:text-gray-900 hover:text-pink-600 uppercase">NÀNG
+                                                SEN DOCTOR</a>
                                         </div>
                                     </div>
                                 </div>
@@ -58,34 +69,59 @@
                         </li>
                         <li class="group relative">
                             <menu class="astronav-dropdown group open" aria-expanded="true" open="">
-                                <button data-collapse-toggle="mobile-nav-2" type="button" aria-controls="mobile-nav-2" aria-expanded="false"
-                                    class="text-base flex items-center gap-1 w-full lg:w-auto lg:px-3 lg:py-2 p-3 text-gray-600 hover:text-gray-900 uppercase lg:text-xs font-bold">
+                                <button data-collapse-toggle="mobile-nav-2" type="button" aria-controls="mobile-nav-2"
+                                    aria-expanded="false"
+                                    class="focus:bg-pink-700 md:mb-3 md:border-b-2 md:px-0 px-5 border-gray-200 hover:border-pink-600 hover:transition-all flex items-center justify-between gap-1 w-full lg:w-auto lg:px-3 lg:py-2 py-5 md:text-gray-600 md:hover:text-gray-900 text-white uppercase text-xs font-bold">
                                     <a href="#">Dịch vụ</a>
-                                    <img width="12" src="https://www.svgrepo.com/show/521469/arrow-down.svg" alt="">
-                                </button>
-                                <div id="mobile-nav-2" class="hidden lg:group-hover:block astronav-dropdown dropdown-toggle">
-                                    <div class="lg:absolute w-full lg:w-56 z-10 lg:left-0 origin-top-left ">
+                                    <svg class="w-3 h-3 text-white md:text-black dark:text-white" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="m19 9-7 7-7-7" />
+                                    </svg> </button>
+                                <div id="mobile-nav-2"
+                                    class="hidden lg:group-hover:block astronav-dropdown dropdown-toggle bg-pink-700 md:px-0 px-5">
+                                    <div class="lg:absolute w-full lg:w-56 z-10 lg:left-0 origin-top-left">
                                         <div
-                                            class="lg:px-4 px-10 lg:py-4 lg:bg-white lg:rounded-md lg:shadow lg:border flex flex-col space-y-3 lg:text-xs text-base font-bold uppercase">
-                                            <a href="/" class="py-1 text-gray-900 hover:text-pink-600">Bảng giá dịch
+                                            class="lg:bg-gray-100 lg:px-4 lg:py-4 lg:shadow flex flex-col md:space-y-3 lg:text-xs text-xs font-bold uppercase">
+                                            <a href="#"
+                                                class="md:py-1 py-3 text-white md:text-gray-900 hover:text-pink-600">Bảng
+                                                giá dịch
                                                 vụ</a>
-                                            <a href="#" class="py-1 text-gray-900 hover:text-pink-600">điều trị bác
+                                            <a href="#"
+                                                class="md:py-1 py-3 text-white md:text-gray-900 hover:text-pink-600">điều
+                                                trị bác
                                                 sĩ</a>
-                                            <a href="#" class="py-1 text-gray-900 hover:text-pink-600">MASSAGE XOA BÓP
+                                            <a href="#"
+                                                class="md:py-1 py-3 text-white md:text-gray-900 hover:text-pink-600">MASSAGE
+                                                XOA BÓP
                                                 BẤM HUYỆT</a>
-                                            <a href="#" class="py-1 text-gray-900 hover:text-pink-600">MASSAGE BÀ
+                                            <a href="#"
+                                                class="md:py-1 py-3 text-white md:text-gray-900 hover:text-pink-600">MASSAGE
+                                                BÀ
                                                 BẦU</a>
-                                            <a href="#" class="py-1 text-gray-900 hover:text-pink-600">MASSAGE CẶP
+                                            <a href="#"
+                                                class="md:py-1 py-3 text-white md:text-gray-900 hover:text-pink-600">MASSAGE
+                                                CẶP
                                                 ĐÔI</a>
-                                            <a href="#" class="py-1 text-gray-900 hover:text-pink-600">XÔNG HƠI ĐÁ
+                                            <a href="#"
+                                                class="md:py-1 py-3 text-white md:text-gray-900 hover:text-pink-600">XÔNG
+                                                HƠI ĐÁ
                                                 MUỐI</a>
-                                            <a href="#" class="py-1 text-gray-900 hover:text-pink-600">XÔNG HƠI THẢO
+                                            <a href="#"
+                                                class="md:py-1 py-3 text-white md:text-gray-900 hover:text-pink-600">XÔNG
+                                                HƠI THẢO
                                                 DƯỢC</a>
-                                            <a href="#" class="py-1 text-gray-900 hover:text-pink-600">XÔNG TUYẾT
+                                            <a href="#"
+                                                class="md:py-1 py-3 text-white md:text-gray-900 hover:text-pink-600">XÔNG
+                                                TUYẾT
                                                 LẠNH</a>
-                                            <a href="#" class="py-1 text-gray-900 hover:text-pink-600">NGÂM THUỐC LÁ DAO
+                                            <a href="#"
+                                                class="md:py-1 py-3 text-white md:text-gray-900 hover:text-pink-600">NGÂM
+                                                THUỐC LÁ DAO
                                                 ĐỎ</a>
-                                            <a href="#" class="py-1 text-gray-900 hover:text-pink-600">NGÂM BỒN
+                                            <a href="#"
+                                                class="md:py-1 py-3 text-white md:text-gray-900 hover:text-pink-600">NGÂM
+                                                BỒN
                                                 JACUZZI</a>
                                         </div>
                                     </div>
@@ -94,19 +130,32 @@
                         </li>
                         <li class="group relative">
                             <menu class="astronav-dropdown group open" aria-expanded="true" open="">
-                                <button data-collapse-toggle="mobile-nav-3" type="button" aria-controls="mobile-nav-3" aria-expanded="false"
-                                    class="text-base flex items-center gap-1 w-full lg:w-auto lg:px-3 lg:py-2 p-3 text-gray-600 hover:text-gray-900 uppercase lg:text-xs font-bold">
+                                <button data-collapse-toggle="mobile-nav-3" type="button" aria-controls="mobile-nav-3"
+                                    aria-expanded="false"
+                                    class="focus:bg-pink-700 md:mb-3 md:border-b-2 md:px-0 px-5 border-gray-200 hover:border-pink-600 hover:transition-all flex items-center justify-between gap-1 w-full lg:w-auto lg:px-3 lg:py-2 py-5 md:text-gray-600 md:hover:text-gray-900 text-white uppercase text-xs font-bold">
                                     <a href="#">Tin tức & ưu đãi</a>
-                                    <img width="12" src="https://www.svgrepo.com/show/521469/arrow-down.svg" alt="">
-                                </button>
-                                <div id="mobile-nav-3" class="hidden lg:group-hover:block astronav-dropdown dropdown-toggle">
+                                    <svg class="w-3 h-3 text-white md:text-black dark:text-white" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="m19 9-7 7-7-7" />
+                                    </svg> </button>
+                                <div id="mobile-nav-3"
+                                    class="hidden lg:group-hover:block astronav-dropdown dropdown-toggle bg-pink-700 md:px-0 px-5">
                                     <div class="lg:absolute w-full lg:w-48 z-10 lg:left-0 origin-top-left ">
                                         <div
-                                            class="lg:px-4 px-10 lg:py-4 lg:bg-white lg:rounded-md lg:shadow lg:border flex flex-col space-y-3 lg:text-xs text-base font-bold uppercase">
-                                            <a href="/" class="py-1 text-gray-900 hover:text-pink-600">ƯU ĐÃI</a>
-                                            <a href="#" class="py-1 text-gray-900 hover:text-pink-600">HOẠT ĐỘNG NÀNG SEN</a>
-                                            <a href="#" class="py-1 text-gray-900 hover:text-pink-600">TUYỂN DỤNG</a>
-                                            <a href="#" class="py-1 text-gray-900 hover:text-pink-600">ĐÀO TẠO</a>
+                                            class="lg:bg-gray-100 lg:px-4 lg:py-4 lg:shadow flex flex-col md:space-y-3 lg:text-xs text-xs font-bold uppercase">
+                                            <a href="#"
+                                                class="md:py-1 py-3 text-white md:text-gray-900 hover:text-pink-600">ƯU
+                                                ĐÃI</a>
+                                            <a href="#"
+                                                class="md:py-1 py-3 text-white md:text-gray-900 hover:text-pink-600">HOẠT
+                                                ĐỘNG NÀNG SEN</a>
+                                            <a href="#"
+                                                class="md:py-1 py-3 text-white md:text-gray-900 hover:text-pink-600">TUYỂN
+                                                DỤNG</a>
+                                            <a href="#"
+                                                class="md:py-1 py-3 text-white md:text-gray-900 hover:text-pink-600">ĐÀO
+                                                TẠO</a>
                                         </div>
                                     </div>
                                 </div>
@@ -114,18 +163,27 @@
                         </li>
                         <li class="group relative">
                             <menu class="astronav-dropdown group open" aria-expanded="true" open="">
-                                <button data-collapse-toggle="mobile-nav-4" type="button" aria-controls="mobile-nav-4" aria-expanded="false"
-                                    class="text-base flex items-center gap-1 w-full lg:w-auto lg:px-3 lg:py-2 p-3 text-gray-600 hover:text-gray-900 uppercase lg:text-xs font-bold">
+                                <button data-collapse-toggle="mobile-nav-4" type="button" aria-controls="mobile-nav-4"
+                                    aria-expanded="false"
+                                    class="focus:bg-pink-700 md:mb-3 md:border-b-2 md:px-0 px-5 border-gray-200 hover:border-pink-600 hover:transition-all flex items-center justify-between gap-1 w-full lg:w-auto lg:px-3 lg:py-2 py-5 md:text-gray-600 md:hover:text-gray-900 text-white uppercase text-xs font-bold">
                                     <a href="#">hướng dẫn khách hàng</a>
-                                    <img width="12" src="https://www.svgrepo.com/show/521469/arrow-down.svg" alt="">
-                                </button>
-                                <div id="mobile-nav-4" class="hidden lg:group-hover:block astronav-dropdown dropdown-toggle">
+                                    <svg class="w-3 h-3 text-white md:text-black dark:text-white" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="m19 9-7 7-7-7" />
+                                    </svg> </button>
+                                <div id="mobile-nav-4"
+                                    class="hidden lg:group-hover:block astronav-dropdown dropdown-toggle bg-pink-700 md:px-0 px-5">
                                     <div class="lg:absolute w-full lg:w-fit z-10 lg:left-0 origin-top-left ">
                                         <div
-                                            class="lg:px-4 px-10 lg:py-4 lg:bg-white lg:rounded-md lg:shadow lg:border flex flex-col space-y-3 lg:text-xs text-base font-bold uppercase">
-                                            <a href="/" class="py-1 text-gray-900 hover:text-pink-600">QUY TRÌNH DỊCH
+                                            class="lg:bg-gray-100 lg:px-4 lg:py-4 lg:shadow flex flex-col md:space-y-3 lg:text-xs text-xs font-bold uppercase">
+                                            <a href="#"
+                                                class="md:py-1 py-3 text-white md:text-gray-900 hover:text-pink-600">QUY
+                                                TRÌNH DỊCH
                                                 VỤ</a>
-                                            <a href="#" class="py-1 text-gray-900 hover:text-pink-600">CÂU HỎI THƯỜNG
+                                            <a href="#"
+                                                class="md:py-1 py-3 text-white md:text-gray-900 hover:text-pink-600">CÂU
+                                                HỎI THƯỜNG
                                                 GẶP</a>
                                         </div>
                                     </div>
@@ -135,39 +193,71 @@
                         <li class="group relative">
                             <menu class="astronav-dropdown group open" aria-expanded="true" open="">
                                 <button
-                                    class="text-base flex items-center gap-1 w-full lg:w-auto lg:px-3 lg:py-2 p-3 text-gray-600 hover:text-gray-900 uppercase lg:text-xs font-bold">
+                                    class="focus:bg-pink-700 md:mb-3 md:border-b-2 md:px-0 px-5 border-gray-200 hover:border-pink-600 hover:transition-all flex items-center justify-between gap-1 w-full lg:w-auto lg:px-3 lg:py-2 py-5 md:text-gray-600 md:hover:text-gray-900 text-white uppercase text-xs font-bold">
                                     <a href="">đặt lịch</a>
                                 </button>
                             </menu>
                         </li>
                         <li class="group relative">
                             <menu class="astronav-dropdown group open" aria-expanded="true" open="">
-                                <button data-collapse-toggle="mobile-nav-6" type="button" aria-controls="mobile-nav-6" aria-expanded="false"
-                                    class="text-base flex items-center gap-1 w-full lg:w-auto lg:px-3 lg:py-2 p-3 text-gray-600 hover:text-gray-900 uppercase lg:text-xs font-bold">
-                                    <span class="lg:w-4 w-6"><img src="https://www.svgrepo.com/show/348179/language.svg" alt=""
-                                            class=""></span>
-                                    <img width="12" src="https://www.svgrepo.com/show/521469/arrow-down.svg" alt="">
-                                </button>
-                                <div id="mobile-nav-6" class="hidden lg:group-hover:block astronav-dropdown dropdown-toggle">
+                                <button data-collapse-toggle="mobile-nav-6" type="button" aria-controls="mobile-nav-6"
+                                    aria-expanded="false"
+                                    class="focus:bg-pink-700 md:mb-3 md:border-b-2 md:px-0 px-5 border-gray-200 hover:border-pink-600 hover:transition-all flex items-center justify-between gap-1 w-full lg:w-auto lg:px-3 lg:py-2 py-5 md:text-gray-600 md:hover:text-gray-900 text-white uppercase text-xs font-bold">
+                                    <span class="w-4">
+                                        <svg class="stroke-white md:stroke-black stroke-2 w-full h-full"
+                                            viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="24" cy="24" r="23" stroke-linejoin="round"></circle>
+                                            <path d="M23 1C23 1 15 10.4901 15 24C15 37.5099 23 47 23 47"
+                                                stroke-linejoin="round"></path>
+                                            <path d="M25 1C25 1 33 10.4901 33 24C33 37.5099 25 47 25 47"
+                                                stroke-linejoin="round"></path>
+                                            <path d="M1 24H47"></path>
+                                        </svg> </span>
+                                    <svg class="w-3 h-3 text-white md:text-black dark:text-white" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="m19 9-7 7-7-7" />
+                                    </svg> </button>
+                                <div id="mobile-nav-6"
+                                    class="hidden lg:group-hover:block astronav-dropdown dropdown-toggle bg-pink-700 md:px-0 px-5">
                                     <div class="lg:absolute w-full lg:w-fit z-10 lg:left-0 origin-top-left ">
                                         <div
-                                            class="lg:px-4 px-10 lg:py-4 lg:bg-white lg:rounded-md lg:shadow lg:border flex flex-col space-y-3 lg:text-xs text-base font-bold uppercase">
-                                            <a href="/" class="py-1 text-gray-900 hover:text-pink-600">ENGLISH</a>
-                                            <a href="#" class="py-1 text-gray-900 hover:text-pink-600">한국어</a>
-                                            <a href="#" class="py-1 text-gray-900 hover:text-pink-600">日本語</a>
-                                            <a href="#" class="py-1 text-gray-900 hover:text-pink-600">简体中文</a>
+                                            class="lg:bg-gray-100 lg:px-4 lg:py-4 lg:shadow flex flex-col md:space-y-3 lg:text-xs text-xs font-bold uppercase">
+                                            <a href="#"
+                                                class="md:py-1 py-3 text-white md:text-gray-900 hover:text-pink-600">ENGLISH</a>
+                                            <a href="#"
+                                                class="md:py-1 py-3 text-white md:text-gray-900 hover:text-pink-600">한국어</a>
+                                            <a href="#"
+                                                class="md:py-1 py-3 text-white md:text-gray-900 hover:text-pink-600">日本語</a>
+                                            <a href="#"
+                                                class="md:py-1 py-3 text-white md:text-gray-900 hover:text-pink-600">简体中文</a>
                                         </div>
                                     </div>
                                 </div>
                             </menu>
                         </li>
+                        <li class="group relative md:hidden">
+                            <div class="flex justify-between">
+                                <input type="input"
+                                    class="bg-pink-700 relative block pl-5 py-4 ouline-none border-none focus:outline-none text-white w-full placeholder-white"
+                                    placeholder="Tìm kiếm" />
+                                <button class="px-5 py-4 bg-pink-700" type="button" id="button-addon1"
+                                    data-te-ripple-init data-te-ripple-color="light">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                        class="h-5 w-5 text-white">
+                                        <path fill-rule="evenodd"
+                                            d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </li>
                     </ul>
                 </nav>
-            </header>
-            
+            </div>
         </div>
-    </div>
-    <div class="mt-28">
+    </header>
+    <main class="mt-28">
         <div class="w-full h-96">
             <div class="w-full h-full bg-center bg-cover relative"
                 style="background-image: url(https://vi.huongsenhealthcare.com/wp-content/uploads/2022/05/huongsenbt-5997.jpg)">
@@ -302,7 +392,8 @@
                     <p class="text-lg text-gray-800"><strong>Gói liệu trình trị liệu</strong> bao gồm 2 gói
                         <strong>"Platinum"</strong> và <strong>"Diamond"</strong>. Được thực hiện bởi những kỹ thuật
                         viên có chuyên môn cao giúp xóa tan sự đau nhức, mệt mỏi, giúp mọi khách hàng đều được thư giãn
-                        và cảm thấy thoải mái nhất.</p>
+                        và cảm thấy thoải mái nhất.
+                    </p>
                     <div class="grid lg:grid-flow-col gap-8 grid-flow-row lg:grid-cols-2">
                         <div class="w-full space-y-10">
                             <div class="bg-pink-600 w-full py-11 px-3">
@@ -599,22 +690,29 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="footer">
-        <footer class="bg-zinc-800 text-center text-neutral-600 dark:bg-neutral-600 dark:text-neutral-200 lg:text-left">
+    </main>
+    <footer>
+        <div class="bg-zinc-800 text-center text-neutral-600 dark:bg-neutral-600 dark:text-neutral-200 lg:text-left">
             <div class="md:px-10 py-10 px-4 text-center md:text-left">
                 <div class="grid-1 w-fit grid md:gap-8 gap-20 md:grid-cols-2 lg:grid-cols-3 mx-auto">
                     <div class="w-full mx-auto text-white text-left space-y-6">
-                        <h6 class="mb-4 text-left md:flex justify-center font-semibold text-lg uppercase md:justify-start">
+                        <h6
+                            class="mb-4 text-left md:flex justify-center font-semibold text-lg uppercase md:justify-start">
                             Giờ làm việc
                         </h6>
                         <ul class="space-y-2">
-                            <li><p class="text-white dark:text-neutral-200">9:00 – 22:00</p></li>
-                            <li><p class="text-white dark:text-neutral-200">Tất cả các ngày trong tuần (chỉ nghỉ Tết Nguyên Đán)</p></li>
+                            <li>
+                                <p class="text-white dark:text-neutral-200">9:00 – 22:00</p>
+                            </li>
+                            <li>
+                                <p class="text-white dark:text-neutral-200">Tất cả các ngày trong tuần (chỉ nghỉ Tết
+                                    Nguyên Đán)</p>
+                            </li>
                         </ul>
                     </div>
                     <div class="w-full mx-auto text-white text-left space-y-6">
-                        <h6 class="mb-4 md:flex justify-center text-left font-semibold text-lg uppercase md:justify-start">
+                        <h6
+                            class="mb-4 md:flex justify-center text-left font-semibold text-lg uppercase md:justify-start">
                             LIÊN HỆ
                         </h6>
                         <div class="space-y-8">
@@ -628,31 +726,45 @@
                             </ul>
                             <ul class="space-y-2">
                                 <li>
-                                    <a href="tel:+84353183888" class="text-pink-600 hover:text-pink-500 dark:text-neutral-200">035 318 3888 (HN)</a>
+                                    <a href="tel:+84353183888"
+                                        class="text-pink-600 hover:text-pink-500 dark:text-neutral-200">035 318 3888
+                                        (HN)</a>
                                 </li>
                                 <li>
-                                    <a href="tel:+84356183888" class="text-pink-600 hover:text-pink-500 dark:text-neutral-200">035 618 3888 (SG)</a>
+                                    <a href="tel:+84356183888"
+                                        class="text-pink-600 hover:text-pink-500 dark:text-neutral-200">035 618 3888
+                                        (SG)</a>
                                 </li>
                                 <li>
-                                    <a href="mailto:huongsenhealthcarecenter@gmail.com" class="text-pink-600 hover:text-pink-500 dark:text-neutral-200">huongsenhealthcarecenter@gmail.com</a>
+                                    <a href="mailto:huongsenhealthcarecenter@gmail.com"
+                                        class="text-pink-600 hover:text-pink-500 dark:text-neutral-200">huongsenhealthcarecenter@gmail.com</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <div class="w-full mx-auto">
-                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fhuongsenhealthcare%2F%3Fref%3Dembed_page&tabs&width=340&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                        <iframe
+                            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fhuongsenhealthcare%2F%3Fref%3Dembed_page&tabs&width=340&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                            width="340" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                            allowfullscreen="true"
+                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
                     </div>
                 </div>
             </div>
             <div class="bg-zinc-900 p-6 text-center w-full">
                 <span class="text-gray-400 text-sm">NÀNG SEN © 2024 Mọi quyền được bảo vệ </span>
             </div>
-        </footer>
-    </div>
-    <div class="w-fit">
-        <a href="tel:+84353183888" class="text-center flex justify-center items-center fixed left-2 bottom-2 space-x-3 ">
-            <img class="animate-pulse" src="https://bizweb.dktcdn.net/100/408/657/themes/793825/assets/hotline-icon.png?1680843215561" alt="" width="50" scale="0">
-            <span class="text-white text-xl font-semibold tracking-wider px-4 py-1 rounded-md bg-zinc-600 hidden sm:block">HOTLINE 035 318 3888</span>
+        </div>
+    </footer>
+    <div class="w-fit fixed z-50">
+        <a href="tel:+84353183888"
+            class="text-center flex justify-center items-center fixed left-2 bottom-2 space-x-3 ">
+            <img class="animate-pulse"
+                src="https://bizweb.dktcdn.net/100/408/657/themes/793825/assets/hotline-icon.png?1680843215561" alt=""
+                width="50" scale="0">
+            <span
+                class="text-white text-xl font-semibold tracking-wider px-4 py-1 rounded-md bg-zinc-600 hidden sm:block">HOTLINE
+                035 318 3888</span>
         </a>
     </div>
     <div class="fixed right-2 bottom-2 cursor-pointer">
